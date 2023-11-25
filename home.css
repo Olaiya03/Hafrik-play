@@ -1,0 +1,350 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    /* background-color: #171719; */
+}
+.container {
+    width: 100%;
+    /* padding-left: 24px; */
+}
+
+/* NAVIGATION BAR STYLE, START HERE 1093*/
+.navBar {
+    background-color: #171719;
+    width: 80%;
+    padding: 32px 28px 16px 28px;
+    position: fixed;
+    top: 0;
+    left: 274px;
+    z-index: 3;
+}
+.navBarContainer {
+    background-color: #171719;
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    margin: 0;
+}
+.searchBar {
+    width: 424px;
+    height: 48px;
+    padding: 0 16px;
+    background: #262629;
+    border-radius: 48px;
+    align-items: center;
+    gap: 8px;
+    display: inline-flex
+}
+.searchBar p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #9898A0;
+}
+.user {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding-right: 24px;
+    margin: 0;
+    
+}
+.user p {
+    display: inline;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #9898A0;
+}
+
+/* SIDE NAVIGATION BAR STYLE, START HERE 249*/
+.section {
+    display: flex;
+    margin:0;
+}
+.sideNav {
+    background-color: #262629;
+    display: flex;
+    width: 250px;
+    height: 810px;
+    padding-left: 24px;
+    flex-direction: column;
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.logo {
+    margin: 22px 0;
+    padding-left: 9px;
+}
+.sideTitle {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    color: #0c9159;
+    margin: 0;
+}
+.group .active {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    color: #0c9159;
+    margin: 14px 0;
+}
+.group {
+    margin-bottom: 16px;
+}
+.group div {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 0 24px;
+}
+.group div p {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    color: #ffffff;
+    margin: 14px 0;
+}
+.copyRight {
+    font-family: Inter;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+/* MAIN CONTAINER STYLE, START HERE */
+.mainContainer {
+    background-color: #171717;   
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-top: 104px;
+    margin-left: 274px;
+    padding-top: 16px;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    position: relative;
+}
+.imgs {
+    position: absolute;
+    height: 500px;
+    opacity: 0;
+    transition: all 0,3s ease-in-out;
+    width: 709px;
+    z-index: 0;
+    border-radius: 15px;
+    /* background-size: contain; */
+}
+.img-1 {
+    left: 15%;
+    opacity: .6;
+    transform: translateX(-50%);
+}
+.img-2, .img-4 {
+    height: 250px;
+    opacity: 0.8;
+    width: 743px;
+    z-index: 1;
+}
+.img-2 {
+    left: 25%;
+    transform: translateX(-50%);
+}
+.img-3 {
+    /* box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.35); */
+    height: 300px;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 831px;
+    z-index: 2;
+}
+.img-4 {
+    left: 70%;
+    transform: translateX(-50%);
+}
+.img-5 {
+    left: 85%;
+    opacity: .6;
+    transform: translateX(-50%);
+}
+
+
+.slider-container img:nth-child(6) {
+    position: absolute;
+    top: 15px;
+    right: -140px;
+    z-index: 2;
+}
+.slider-container img:nth-child(8) {
+    position: absolute;
+    bottom: 12px;
+    left: 40%;
+    z-index: 2;
+}
+.song {
+    position: absolute;
+    left: -125px;
+    bottom: 40px;
+    z-index: 2;
+}
+.song p:first-child {
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0
+}
+.song div {
+    display: inline-flex;
+    gap: 12px;
+    margin: 0
+}
+.song div p {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 24px;
+    color: #fcfcfc;
+    margin: 0
+}
+.song p:nth-child(3) {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 24px;
+    color: #fcfcfc;
+    margin: 0
+}
+
+.rowGroup{
+    background-color: #171719;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.rowTitle {
+    margin: 0 24px;
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500px;
+    line-height: 32px;
+    color: #ffffff;
+}
+.musicRow {
+    display: flex;
+    gap: 24px;
+    margin: 0px 24px;
+}
+.artist {
+    position: relative;
+}
+.artist .title-2 {
+    position: absolute;
+    bottom: 24px;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 500px;
+    line-height: 12px;
+    padding-left: 16px;
+    color: #ffffff;
+}
+.artist p {
+    position: absolute;
+    bottom: 12px;
+    font-family: Inter;
+    font-size: 8px;
+    font-weight: 400px;
+    line-height: 12px;
+    padding-left: 16px;
+    color: #9898a0;
+}
+
+
+/* PLAYER CINTROL STYLE, START HERE */
+.playerControl {
+    background-color: #36363A;
+    width: 100%;
+    height: 60px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    padding: 0 24px;
+    z-index: 2;
+}
+
+
+.album {
+    display: flex;
+    align-items: center;   
+}
+.albumAndArtist {
+    margin-left: 8px;
+    margin-right: 24px;
+    align-items: center;
+}
+.albumAndArtist .name {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500px;
+    line-height: 16px;
+    color: #ffffff;
+}
+.albumAndArtist p {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500px;
+    line-height: 16px;
+    color: #fcfcfc;
+    margin: 0;
+    opacity: 65px;
+}
+
+
+.controlAndTimer {
+    display: flex;
+    gap:24px;
+    /* justify-content: space-between; */
+}
+
+
+.volumeControl {
+    display: flex;
+    gap: 16px;
+    vertical-align: top;
+    margin-right: 24px;
+}

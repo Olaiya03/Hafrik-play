@@ -1,0 +1,49 @@
+body {
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+.container {
+    background-color: #171717;
+    width: 1366px;
+    height: 768px;
+}
+  
+.section {
+    position: relative;
+    width: 1231px;
+    height: 768px;
+    margin: auto;
+    /* left: 135px; */
+    /* background-color: #ca1111; */
+}
+  
+.unsplash {
+    position: absolute;
+    width: 1038px;
+    height: 768px;
+    /* top: 0; */
+    left: 249px;
+    object-fit: cover;
+}
+
+.rectangle {
+    position: absolute;
+    width: 903px;
+    height: 387px;
+    top: 189px;
+    left: 59px;
+}
+
+.discover {
+  position: absolute;
+  left: 401px;
+  top: 472px;
+  color: #FAFAFA;
+  font-family: Inter;
+  font-size: 32px;  
+  font-weight: 500;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+  
